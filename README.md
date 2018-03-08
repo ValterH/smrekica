@@ -1,0 +1,2 @@
+# smrekica
+Naloga smrekica
