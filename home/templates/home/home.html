@@ -1,0 +1,11 @@
+{% extends "home/header.html" %}
+<!-- uporabi template header.html -->
+{% block content %}
+<form align="center" style="margin-top:5%; font-size:20px" action="/smrekica/" method="post">
+	{% csrf_token %}
+	<!-- vnos podatkov-->
+    <label for="number">Vnesite število nivojev: </label> 
+    <input id="number" type="text" name="number" value="{{ current_name }}"> <br>
+    <input type="submit" value="Izriši smrekico">
+</form>
+{% endblock %}

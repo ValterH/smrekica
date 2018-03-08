@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Smrekica</title>
+	<meta charset="utf-8" />
+	<!-- uporabi bootstrap.min.css in favicon.ico iz static files-->
+	{% load staticfiles %}
+	<link rel="icon" href="{% static '/favicon.ico' %}"/>
+	<link rel='stylesheet' href="{% static 'css/bootstrap.min.css' %}" type='text/css' />
+</head>
+
+<body class="body" style="background-color:#f6f6f6">
+	<div>
+	   {% block content %}
+	   {% endblock %}	
+	</div>
+</body>
+
+</html>
